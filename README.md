@@ -1,2 +1,5 @@
 # search_ad
-Code Sample for review
+
+Repository with Search Ad.
+
+This repo contains codes sample for review.
