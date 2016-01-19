@@ -114,9 +114,6 @@ if ($result->row_count() > 0) {
 		$date_budget = date('Y-m-t', mktime(0, 0, 0, $report_month + 1, 0, $report_year));
 	}
 
-	$sYra_details = config::get('database.default');
-	$sYra = new Database($sYra_details['hostname'], $sYra_details['username'], $sYra_details['password'], $sYra_details['schema']);
-
 	// calculates the budget/day
 	$query = "	SELECT budget/:quantity_days AS budget
 				FROM sYra_logging.google_advertising_budget gabl
